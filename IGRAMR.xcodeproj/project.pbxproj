@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170AAD8D1BF1FFB000161DCB /* UserTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170AAD8C1BF1FFB000161DCB /* UserTimelineController.swift */; };
+		170AAD8F1BF2094E00161DCB /* UserTimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170AAD8E1BF2094E00161DCB /* UserTimelineCell.swift */; };
+		1739A6351BA14F6C00AD0D23 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1739A6341BA14F6C00AD0D23 /* iAd.framework */; };
+		1741AF091BA6A7CC004FD370 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741AF081BA6A7CC004FD370 /* User.swift */; };
+		1741AF0B1BA6C680004FD370 /* UserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741AF0A1BA6C680004FD370 /* UserMedia.swift */; };
+		174688591B9EC99D007010AB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174688581B9EC99D007010AB /* ApiClient.swift */; };
+		174688741B9EE824007010AB /* NSDate+IGRAMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174688701B9EE824007010AB /* NSDate+IGRAMR.swift */; };
+		174688751B9EE824007010AB /* String+IGRAMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174688711B9EE824007010AB /* String+IGRAMR.swift */; };
+		174688761B9EE824007010AB /* UIColor+IGRAMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174688721B9EE824007010AB /* UIColor+IGRAMR.swift */; };
+		174688771B9EE824007010AB /* UIFont+IGRAMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174688731B9EE824007010AB /* UIFont+IGRAMR.swift */; };
+		174AD2751BCE2B49005F58D3 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD2741BCE2B49005F58D3 /* BaseController.swift */; };
+		174AD2771BCE2B60005F58D3 /* MyTimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD2761BCE2B60005F58D3 /* MyTimelineCell.swift */; };
+		174AD2791BCE2B84005F58D3 /* SearchTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD2781BCE2B84005F58D3 /* SearchTagView.swift */; };
+		174AD27B1BCE2B93005F58D3 /* ChooseAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD27A1BCE2B93005F58D3 /* ChooseAccountView.swift */; };
+		174AD27D1BCE2BB1005F58D3 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD27C1BCE2BB1005F58D3 /* Instagram.swift */; };
+		174AD27F1BCE2BC9005F58D3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD27E1BCE2BC9005F58D3 /* LoginController.swift */; };
+		174AD2811BCE2BD6005F58D3 /* MyTimeLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD2801BCE2BD6005F58D3 /* MyTimeLineController.swift */; };
+		174AD2881BCE4D33005F58D3 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174AD2871BCE4D32005F58D3 /* ActivityIndicatorView.swift */; };
+		1753DD111B9DB8B200CFB143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DD101B9DB8B200CFB143 /* AppDelegate.swift */; };
+		1753DD141B9DB8B200CFB143 /* IGRAMR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1753DD121B9DB8B200CFB143 /* IGRAMR.xcdatamodeld */; };
+		1753DD191B9DB8B200CFB143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753DD171B9DB8B200CFB143 /* Main.storyboard */; };
+		1753DD1B1B9DB8B200CFB143 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753DD1A1B9DB8B200CFB143 /* Images.xcassets */; };
+		1753DD1E1B9DB8B200CFB143 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1753DD1C1B9DB8B200CFB143 /* LaunchScreen.xib */; };
+		1753DD2A1B9DB8B200CFB143 /* IGRAMRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DD291B9DB8B200CFB143 /* IGRAMRTests.swift */; };
+		17C3F6A81BD7C77E00893CAA /* Alert+IGRAMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3F6A71BD7C77D00893CAA /* Alert+IGRAMR.swift */; };
+		17DBE9C41BEB719C007FDC7F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DBE9C31BEB719C007FDC7F /* LoadingView.swift */; };
+		521F1686CD87097088AB64FD /* libPods-IGRAMR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8467EB428EAB0F018C74A84E /* libPods-IGRAMR.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1753DD241B9DB8B200CFB143 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1753DD031B9DB8B200CFB143 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1753DD0A1B9DB8B200CFB143;
+			remoteInfo = IGRAMR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170AAD8C1BF1FFB000161DCB /* UserTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineController.swift; sourceTree = "<group>"; };
+		170AAD8E1BF2094E00161DCB /* UserTimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineCell.swift; sourceTree = "<group>"; };
+		1739A6341BA14F6C00AD0D23 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		1741AF081BA6A7CC004FD370 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1741AF0A1BA6C680004FD370 /* UserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedia.swift; sourceTree = "<group>"; };
+		174688581B9EC99D007010AB /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		174688701B9EE824007010AB /* NSDate+IGRAMR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+IGRAMR.swift"; sourceTree = "<group>"; };
+		174688711B9EE824007010AB /* String+IGRAMR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+IGRAMR.swift"; sourceTree = "<group>"; };
+		174688721B9EE824007010AB /* UIColor+IGRAMR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+IGRAMR.swift"; sourceTree = "<group>"; };
+		174688731B9EE824007010AB /* UIFont+IGRAMR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+IGRAMR.swift"; sourceTree = "<group>"; };
+		174688781B9EE8B9007010AB /* IGRAMR-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGRAMR-Bridging.h"; sourceTree = "<group>"; };
+		174688791B9EE8B9007010AB /* IGRAMR-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGRAMR-Prefix.pch"; sourceTree = "<group>"; };
+		174AD2741BCE2B49005F58D3 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		174AD2761BCE2B60005F58D3 /* MyTimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimelineCell.swift; sourceTree = "<group>"; };
+		174AD2781BCE2B84005F58D3 /* SearchTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTagView.swift; sourceTree = "<group>"; };
+		174AD27A1BCE2B93005F58D3 /* ChooseAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccountView.swift; sourceTree = "<group>"; };
+		174AD27C1BCE2BB1005F58D3 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		174AD27E1BCE2BC9005F58D3 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		174AD2801BCE2BD6005F58D3 /* MyTimeLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimeLineController.swift; sourceTree = "<group>"; };
+		174AD2871BCE4D32005F58D3 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		1753DD0B1B9DB8B200CFB143 /* IGRAMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGRAMR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753DD0F1B9DB8B200CFB143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753DD101B9DB8B200CFB143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1753DD131B9DB8B200CFB143 /* IGRAMR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IGRAMR.xcdatamodel; sourceTree = "<group>"; };
+		1753DD181B9DB8B200CFB143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1753DD1A1B9DB8B200CFB143 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1753DD1D1B9DB8B200CFB143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1753DD231B9DB8B200CFB143 /* IGRAMRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGRAMRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753DD281B9DB8B200CFB143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753DD291B9DB8B200CFB143 /* IGRAMRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGRAMRTests.swift; sourceTree = "<group>"; };
+		17C3F6A71BD7C77D00893CAA /* Alert+IGRAMR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+IGRAMR.swift"; sourceTree = "<group>"; };
+		17DBE9C31BEB719C007FDC7F /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		2E00BDE09B268B87DB696DAE /* Pods-IGRAMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGRAMR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGRAMR/Pods-IGRAMR.debug.xcconfig"; sourceTree = "<group>"; };
+		8467EB428EAB0F018C74A84E /* libPods-IGRAMR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGRAMR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5DDC511E4BD91039008696 /* Pods-IGRAMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGRAMR.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGRAMR/Pods-IGRAMR.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1753DD081B9DB8B200CFB143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1739A6351BA14F6C00AD0D23 /* iAd.framework in Frameworks */,
+				521F1686CD87097088AB64FD /* libPods-IGRAMR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753DD201B9DB8B200CFB143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174688481B9EBCD3007010AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				174AD26F1BCE2AE2005F58D3 /* BaseControllers */,
+				174AD2701BCE2AE2005F58D3 /* CellControllers */,
+				174AD2711BCE2AE2005F58D3 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		174688491B9EBCD3007010AB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				174AD2861BCE4D07005F58D3 /* Common */,
+				1746884C1B9EBD59007010AB /* Api */,
+				1746884D1B9EBD59007010AB /* Extensions */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1746884A1B9EBCD3007010AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1741AF081BA6A7CC004FD370 /* User.swift */,
+				1741AF0A1BA6C680004FD370 /* UserMedia.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1746884B1B9EBCD3007010AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1753DD1C1B9DB8B200CFB143 /* LaunchScreen.xib */,
+				1753DD171B9DB8B200CFB143 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1746884C1B9EBD59007010AB /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				174688581B9EC99D007010AB /* ApiClient.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		1746884D1B9EBD59007010AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				174688701B9EE824007010AB /* NSDate+IGRAMR.swift */,
+				174688711B9EE824007010AB /* String+IGRAMR.swift */,
+				174688721B9EE824007010AB /* UIColor+IGRAMR.swift */,
+				174688731B9EE824007010AB /* UIFont+IGRAMR.swift */,
+				17C3F6A71BD7C77D00893CAA /* Alert+IGRAMR.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		174AD26F1BCE2AE2005F58D3 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				174AD2741BCE2B49005F58D3 /* BaseController.swift */,
+				174AD2781BCE2B84005F58D3 /* SearchTagView.swift */,
+				174AD27A1BCE2B93005F58D3 /* ChooseAccountView.swift */,
+				174AD27C1BCE2BB1005F58D3 /* Instagram.swift */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		174AD2701BCE2AE2005F58D3 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				174AD2761BCE2B60005F58D3 /* MyTimelineCell.swift */,
+				170AAD8E1BF2094E00161DCB /* UserTimelineCell.swift */,
+			);
+			path = CellControllers;
+			sourceTree = "<group>";
+		};
+		174AD2711BCE2AE2005F58D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				174AD27E1BCE2BC9005F58D3 /* LoginController.swift */,
+				174AD2801BCE2BD6005F58D3 /* MyTimeLineController.swift */,
+				170AAD8C1BF1FFB000161DCB /* UserTimelineController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		174AD2861BCE4D07005F58D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				174AD2871BCE4D32005F58D3 /* ActivityIndicatorView.swift */,
+				17DBE9C31BEB719C007FDC7F /* LoadingView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1753DD021B9DB8B100CFB143 = {
+			isa = PBXGroup;
+			children = (
+				1753DD0D1B9DB8B200CFB143 /* IGRAMR */,
+				1753DD261B9DB8B200CFB143 /* IGRAMRTests */,
+				1753DD0C1B9DB8B200CFB143 /* Products */,
+				3CB5DC2D8DF65772549255FB /* Pods */,
+				5729B9AD6B743E01B8DA6F2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1753DD0C1B9DB8B200CFB143 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1753DD0B1B9DB8B200CFB143 /* IGRAMR.app */,
+				1753DD231B9DB8B200CFB143 /* IGRAMRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1753DD0D1B9DB8B200CFB143 /* IGRAMR */ = {
+			isa = PBXGroup;
+			children = (
+				174688481B9EBCD3007010AB /* Controllers */,
+				174688491B9EBCD3007010AB /* Lib */,
+				1746884A1B9EBCD3007010AB /* Models */,
+				1746884B1B9EBCD3007010AB /* View */,
+				1753DD101B9DB8B200CFB143 /* AppDelegate.swift */,
+				1753DD1A1B9DB8B200CFB143 /* Images.xcassets */,
+				1753DD121B9DB8B200CFB143 /* IGRAMR.xcdatamodeld */,
+				1753DD0E1B9DB8B200CFB143 /* Supporting Files */,
+			);
+			path = IGRAMR;
+			sourceTree = "<group>";
+		};
+		1753DD0E1B9DB8B200CFB143 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				174688781B9EE8B9007010AB /* IGRAMR-Bridging.h */,
+				174688791B9EE8B9007010AB /* IGRAMR-Prefix.pch */,
+				1753DD0F1B9DB8B200CFB143 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1753DD261B9DB8B200CFB143 /* IGRAMRTests */ = {
+			isa = PBXGroup;
+			children = (
+				1753DD291B9DB8B200CFB143 /* IGRAMRTests.swift */,
+				1753DD271B9DB8B200CFB143 /* Supporting Files */,
+			);
+			path = IGRAMRTests;
+			sourceTree = "<group>";
+		};
+		1753DD271B9DB8B200CFB143 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1753DD281B9DB8B200CFB143 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CB5DC2D8DF65772549255FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E00BDE09B268B87DB696DAE /* Pods-IGRAMR.debug.xcconfig */,
+				AE5DDC511E4BD91039008696 /* Pods-IGRAMR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5729B9AD6B743E01B8DA6F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1739A6341BA14F6C00AD0D23 /* iAd.framework */,
+				8467EB428EAB0F018C74A84E /* libPods-IGRAMR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1753DD0A1B9DB8B200CFB143 /* IGRAMR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753DD2D1B9DB8B200CFB143 /* Build configuration list for PBXNativeTarget "IGRAMR" */;
+			buildPhases = (
+				D58876765929EA03A7343562 /* Check Pods Manifest.lock */,
+				1753DD071B9DB8B200CFB143 /* Sources */,
+				1753DD081B9DB8B200CFB143 /* Frameworks */,
+				1753DD091B9DB8B200CFB143 /* Resources */,
+				390D04D83217979312592F8D /* Copy Pods Resources */,
+				188F5F979B0D58E9C208A2C6 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGRAMR;
+			productName = IGRAMR;
+			productReference = 1753DD0B1B9DB8B200CFB143 /* IGRAMR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1753DD221B9DB8B200CFB143 /* IGRAMRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753DD301B9DB8B200CFB143 /* Build configuration list for PBXNativeTarget "IGRAMRTests" */;
+			buildPhases = (
+				1753DD1F1B9DB8B200CFB143 /* Sources */,
+				1753DD201B9DB8B200CFB143 /* Frameworks */,
+				1753DD211B9DB8B200CFB143 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1753DD251B9DB8B200CFB143 /* PBXTargetDependency */,
+			);
+			name = IGRAMRTests;
+			productName = IGRAMRTests;
+			productReference = 1753DD231B9DB8B200CFB143 /* IGRAMRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1753DD031B9DB8B200CFB143 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = GrepRuby3;
+				TargetAttributes = {
+					1753DD0A1B9DB8B200CFB143 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 83U27DZH5K;
+					};
+					1753DD221B9DB8B200CFB143 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 1753DD0A1B9DB8B200CFB143;
+					};
+				};
+			};
+			buildConfigurationList = 1753DD061B9DB8B200CFB143 /* Build configuration list for PBXProject "IGRAMR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1753DD021B9DB8B100CFB143;
+			productRefGroup = 1753DD0C1B9DB8B200CFB143 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1753DD0A1B9DB8B200CFB143 /* IGRAMR */,
+				1753DD221B9DB8B200CFB143 /* IGRAMRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1753DD091B9DB8B200CFB143 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753DD191B9DB8B200CFB143 /* Main.storyboard in Resources */,
+				1753DD1E1B9DB8B200CFB143 /* LaunchScreen.xib in Resources */,
+				1753DD1B1B9DB8B200CFB143 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753DD211B9DB8B200CFB143 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188F5F979B0D58E9C208A2C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGRAMR/Pods-IGRAMR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		390D04D83217979312592F8D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGRAMR/Pods-IGRAMR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D58876765929EA03A7343562 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1753DD071B9DB8B200CFB143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174AD27D1BCE2BB1005F58D3 /* Instagram.swift in Sources */,
+				174AD2751BCE2B49005F58D3 /* BaseController.swift in Sources */,
+				1741AF0B1BA6C680004FD370 /* UserMedia.swift in Sources */,
+				174AD2771BCE2B60005F58D3 /* MyTimelineCell.swift in Sources */,
+				174688771B9EE824007010AB /* UIFont+IGRAMR.swift in Sources */,
+				17DBE9C41BEB719C007FDC7F /* LoadingView.swift in Sources */,
+				174AD27B1BCE2B93005F58D3 /* ChooseAccountView.swift in Sources */,
+				174AD27F1BCE2BC9005F58D3 /* LoginController.swift in Sources */,
+				174AD2811BCE2BD6005F58D3 /* MyTimeLineController.swift in Sources */,
+				174688591B9EC99D007010AB /* ApiClient.swift in Sources */,
+				174AD2881BCE4D33005F58D3 /* ActivityIndicatorView.swift in Sources */,
+				170AAD8F1BF2094E00161DCB /* UserTimelineCell.swift in Sources */,
+				1753DD111B9DB8B200CFB143 /* AppDelegate.swift in Sources */,
+				1753DD141B9DB8B200CFB143 /* IGRAMR.xcdatamodeld in Sources */,
+				174688751B9EE824007010AB /* String+IGRAMR.swift in Sources */,
+				174AD2791BCE2B84005F58D3 /* SearchTagView.swift in Sources */,
+				17C3F6A81BD7C77E00893CAA /* Alert+IGRAMR.swift in Sources */,
+				1741AF091BA6A7CC004FD370 /* User.swift in Sources */,
+				174688761B9EE824007010AB /* UIColor+IGRAMR.swift in Sources */,
+				170AAD8D1BF1FFB000161DCB /* UserTimelineController.swift in Sources */,
+				174688741B9EE824007010AB /* NSDate+IGRAMR.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1753DD1F1B9DB8B200CFB143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753DD2A1B9DB8B200CFB143 /* IGRAMRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1753DD251B9DB8B200CFB143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1753DD0A1B9DB8B200CFB143 /* IGRAMR */;
+			targetProxy = 1753DD241B9DB8B200CFB143 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1753DD171B9DB8B200CFB143 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1753DD181B9DB8B200CFB143 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1753DD1C1B9DB8B200CFB143 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1753DD1D1B9DB8B200CFB143 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1753DD2B1B9DB8B200CFB143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E00BDE09B268B87DB696DAE /* Pods-IGRAMR.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "250e8c79-686e-4ca5-9680-07f10fc98d05";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Bridging.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1753DD2C1B9DB8B200CFB143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5DDC511E4BD91039008696 /* Pods-IGRAMR.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "250e8c79-686e-4ca5-9680-07f10fc98d05";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Bridging.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1753DD2E1B9DB8B200CFB143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E00BDE09B268B87DB696DAE /* Pods-IGRAMR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Prefix.pch";
+				INFOPLIST_FILE = IGRAMR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ocus.apps.likefast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "250e8c79-686e-4ca5-9680-07f10fc98d05";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Bridging.h";
+			};
+			name = Debug;
+		};
+		1753DD2F1B9DB8B200CFB143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5DDC511E4BD91039008696 /* Pods-IGRAMR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Prefix.pch";
+				INFOPLIST_FILE = IGRAMR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ocus.apps.likefast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "250e8c79-686e-4ca5-9680-07f10fc98d05";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IGRAMR/IGRAMR-Bridging.h";
+			};
+			name = Release;
+		};
+		1753DD311B9DB8B200CFB143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IGRAMRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ocus.apps.likefast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "250e8c79-686e-4ca5-9680-07f10fc98d05";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IGRAMR.app/IGRAMR";
+			};
+			name = Debug;
+		};
+		1753DD321B9DB8B200CFB143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCUS Corporation (83U27DZH5K)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IGRAMRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ocus.apps.likefast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "250e8c79-686e-4ca5-9680-07f10fc98d05";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IGRAMR.app/IGRAMR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1753DD061B9DB8B200CFB143 /* Build configuration list for PBXProject "IGRAMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753DD2B1B9DB8B200CFB143 /* Debug */,
+				1753DD2C1B9DB8B200CFB143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753DD2D1B9DB8B200CFB143 /* Build configuration list for PBXNativeTarget "IGRAMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753DD2E1B9DB8B200CFB143 /* Debug */,
+				1753DD2F1B9DB8B200CFB143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753DD301B9DB8B200CFB143 /* Build configuration list for PBXNativeTarget "IGRAMRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753DD311B9DB8B200CFB143 /* Debug */,
+				1753DD321B9DB8B200CFB143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1753DD121B9DB8B200CFB143 /* IGRAMR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1753DD131B9DB8B200CFB143 /* IGRAMR.xcdatamodel */,
+			);
+			currentVersion = 1753DD131B9DB8B200CFB143 /* IGRAMR.xcdatamodel */;
+			path = IGRAMR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1753DD031B9DB8B200CFB143 /* Project object */;
+}
