@@ -41,31 +41,11 @@ class ApiClient : AFHTTPRequestOperationManager {
     // MARK: - Check Network Reachability
     
     func isNetworkReachable() -> Bool{
-        self.checkNetworkConnectionCompletionBlock({(isReachable:Bool) in
-            print(isReachable)
-        })
-        return false
-    }
-    
-    func checkNetworkConnectionCompletionBlock(isConnectedBlock:(isReachable : Bool) -> () ){
-        
-        let reachabilityManager : AFNetworkReachabilityManager = AFNetworkReachabilityManager.sharedManager()
-        reachabilityManager.startMonitoring()
-        reachabilityManager.setReachabilityStatusChangeBlock { ( status : AFNetworkReachabilityStatus) -> Void in
-            
-            var isConnect : Bool = false
-            print(AFStringFromNetworkReachabilityStatus(status), terminator: "")
-            if (status.rawValue == 1 || status.rawValue == 2 ){
-                isConnect = true
-            }
-            
-            if (isConnect){
-                reachabilityManager.stopMonitoring()
-                isConnectedBlock(isReachable : isConnect)
-            }
+        if Reachability.reachabilityForInternetConnection().currentReachabilityStatus() == NotReachable {
+            return false
         }
+        return true
     }
-    
     
     
     // MARK: - Common POST Method
@@ -116,12 +96,15 @@ class ApiClient : AFHTTPRequestOperationManager {
         let isReachable : Bool = isNetworkReachable()
         var requestOperation : AFHTTPRequestOperation!
         
-        if isReachable {
+        if !isReachable {
             
-            let alert:UIAlertView = UIAlertView(title:"Network error!", message:"Network seems to be Disconnected", delegate:nil, cancelButtonTitle:"OK")
-            alert.show()
+            dispatch_async(dispatch_get_main_queue(),{
+                LoadingView.shared.hideOverlayView()
+                let alert:UIAlertView = UIAlertView(title:"Network error!", message:"Network seems to be Disconnected.", delegate:nil, cancelButtonTitle:"OK")
+                alert.show()
+            })
             
-            return requestOperation
+            return AFHTTPRequestOperation()
             
         }else{
             

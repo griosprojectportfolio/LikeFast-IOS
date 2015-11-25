@@ -31,6 +31,7 @@
 		1753DD1B1B9DB8B200CFB143 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753DD1A1B9DB8B200CFB143 /* Images.xcassets */; };
 		1753DD1E1B9DB8B200CFB143 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1753DD1C1B9DB8B200CFB143 /* LaunchScreen.xib */; };
 		1753DD2A1B9DB8B200CFB143 /* IGRAMRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753DD291B9DB8B200CFB143 /* IGRAMRTests.swift */; };
+		175D634C1C05ACF20085BCF7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 175D634B1C05ACF20085BCF7 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
 		17C3F6A81BD7C77E00893CAA /* Alert+IGRAMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3F6A71BD7C77D00893CAA /* Alert+IGRAMR.swift */; };
 		17DBE9C41BEB719C007FDC7F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DBE9C31BEB719C007FDC7F /* LoadingView.swift */; };
 		521F1686CD87097088AB64FD /* libPods-IGRAMR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8467EB428EAB0F018C74A84E /* libPods-IGRAMR.a */; };
@@ -77,6 +78,8 @@
 		1753DD231B9DB8B200CFB143 /* IGRAMRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGRAMRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1753DD281B9DB8B200CFB143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1753DD291B9DB8B200CFB143 /* IGRAMRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGRAMRTests.swift; sourceTree = "<group>"; };
+		175D634A1C05ACF20085BCF7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		175D634B1C05ACF20085BCF7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		17C3F6A71BD7C77D00893CAA /* Alert+IGRAMR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+IGRAMR.swift"; sourceTree = "<group>"; };
 		17DBE9C31BEB719C007FDC7F /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		2E00BDE09B268B87DB696DAE /* Pods-IGRAMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGRAMR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGRAMR/Pods-IGRAMR.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		174688491B9EBCD3007010AB /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				175D63491C05ACDE0085BCF7 /* NetReachability */,
 				174AD2861BCE4D07005F58D3 /* Common */,
 				1746884C1B9EBD59007010AB /* Api */,
 				1746884D1B9EBD59007010AB /* Extensions */,
@@ -261,6 +265,15 @@
 				1753DD281B9DB8B200CFB143 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		175D63491C05ACDE0085BCF7 /* NetReachability */ = {
+			isa = PBXGroup;
+			children = (
+				175D634A1C05ACF20085BCF7 /* Reachability.h */,
+				175D634B1C05ACF20085BCF7 /* Reachability.m */,
+			);
+			path = NetReachability;
 			sourceTree = "<group>";
 		};
 		3CB5DC2D8DF65772549255FB /* Pods */ = {
@@ -449,6 +462,7 @@
 				170AAD8F1BF2094E00161DCB /* UserTimelineCell.swift in Sources */,
 				1753DD111B9DB8B200CFB143 /* AppDelegate.swift in Sources */,
 				1753DD141B9DB8B200CFB143 /* IGRAMR.xcdatamodeld in Sources */,
+				175D634C1C05ACF20085BCF7 /* Reachability.m in Sources */,
 				174688751B9EE824007010AB /* String+IGRAMR.swift in Sources */,
 				174AD2791BCE2B84005F58D3 /* SearchTagView.swift in Sources */,
 				17C3F6A81BD7C77E00893CAA /* Alert+IGRAMR.swift in Sources */,

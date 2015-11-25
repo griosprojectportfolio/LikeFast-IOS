@@ -12,16 +12,17 @@ import UIKit
 
 class LoginController : BaseController , userInfoDelegate , newUserInfoDelegate {
     
-    var selectedUserId : NSNumber!
-    var choosenUser : User!
-    var chooseAccountView : ChooseAccountView!
-    
     @IBOutlet var btn_chooseLogin: UIButton?
     @IBOutlet var btn_Login: UIButton?
     @IBOutlet var btn_AutoLogin: UIButton?
     @IBOutlet var lblLoginAutom: UILabel?
     
+    var selectedUserId : NSNumber!
+    var choosenUser : User!
+    var chooseAccountView : ChooseAccountView!
+
     
+    // MARK: - Current View Related Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,11 +52,13 @@ class LoginController : BaseController , userInfoDelegate , newUserInfoDelegate 
     
     // MARK: -  Button Tap Action Methods
     @IBAction func loginButtonTapped(sender: UIButton) {
-        self.current_userId = self.choosenUser.user_id
-        self.access_token = self.choosenUser.access_token
-        let myTimeLine = self.storyboard?.instantiateViewControllerWithIdentifier("MyTimeLine") as! MyTimeLineController
-        myTimeLine.isNewUser = false
-        self.navigationController?.pushViewController(myTimeLine, animated: true)
+        if self.btn_AutoLogin?.tag == 1 {
+            self.current_userId = self.choosenUser.user_id
+            self.access_token = self.choosenUser.access_token
+            let myTimeLine = self.storyboard?.instantiateViewControllerWithIdentifier("MyTimeLine") as! MyTimeLineController
+            myTimeLine.isNewUser = false
+            self.navigationController?.pushViewController(myTimeLine, animated: true)
+        }
     }
     
     @IBAction func chooseAccountButtonTapped(sender: UIButton) {
@@ -83,6 +86,7 @@ class LoginController : BaseController , userInfoDelegate , newUserInfoDelegate 
     }
     
     
+    
     // MARK: -  userInfoDelegate Delegate Methods
     func getSavedUserInfoData(objUser : User){
         self.choosenUser = objUser
@@ -105,13 +109,20 @@ class LoginController : BaseController , userInfoDelegate , newUserInfoDelegate 
     }
     
     
+    
     // MARK: - These functions use for initialization and set layout. Uncomment code if required.
     override func configureComponentsLayout(){
        super.configureComponentsLayout()
        // This function use for set layout of components.
+        
+        self.btn_chooseLogin?.setBackgroundImage(UIImage(named: "loginChoose"), forState: UIControlState.Normal)
+        self.btn_chooseLogin?.setTitle("", forState: UIControlState.Normal)
         self.btn_Login?.hidden = true
         self.lblLoginAutom?.hidden = true
         self.btn_AutoLogin?.hidden = true
+        self.btn_AutoLogin!.tag = 0
+        self.btn_AutoLogin!.setBackgroundImage(UIImage(named: "loginDotGrey"), forState: UIControlState.Normal)
+
         chooseAccountView = ChooseAccountView(frame: CGRectMake(self.btn_chooseLogin!.frame.origin.x ,self.btn_chooseLogin!.frame.origin.y, self.btn_chooseLogin!.frame.size.width, 210))
         chooseAccountView.delegate = self
     }

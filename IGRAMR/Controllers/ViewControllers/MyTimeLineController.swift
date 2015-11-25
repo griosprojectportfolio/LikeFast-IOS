@@ -517,6 +517,9 @@ class MyTimeLineController : BaseController, searchTypeDelegate, searchDataDeleg
         }else if isiPhone6plus {
             self.collectionView?.frame = CGRectMake(0,109, self.view.frame.size.width, self.view.frame.size.height - 160)
         }else if isiPadAir2 {
+            self.btnSelectFilter?.frame = CGRectMake(self.btnSelectFilter!.frame.origin.x + 10, self.btnSelectFilter!.frame.origin.y + 10, self.btnSelectFilter!.frame.size.width - 10, self.btnSelectFilter!.frame.size.height - 10)
+            self.txtSearchField?.frame = CGRectMake(self.txtSearchField!.frame.origin.x,self.txtSearchField!.frame.origin.y + 5, self.txtSearchField!.frame.size.width, self.txtSearchField!.frame.size.height)
+            self.txtSearchField?.font = UIFont.systemFontOfSize(22.0)
             self.collectionView?.frame = CGRectMake(0,131, self.view.frame.size.width, self.view.frame.size.height - 180)
         }
     }
